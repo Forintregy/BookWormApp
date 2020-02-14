@@ -1,0 +1,175 @@
+﻿/*Main elements*/
+html, body {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: cornsilk;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	text-align: center;
+	margin: 2%;
+}
+
+h2 {
+	text-shadow: 1px 1px #d3d3d378;
+}
+
+.header {
+	display: flex;
+	justify-content: right;
+	padding-right: 5%;
+}
+
+.aspTextBox {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+}
+
+
+.header > div {
+	margin-right: 20px;
+}
+
+.header>div > a {
+	 border-bottom: 1px solid transparent;
+}
+
+.header > div > a:hover {
+	color: darkorchid;
+	transition: color 0.5s;
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.gutenbergLink {
+	color: inherit;
+	text-decoration: none;
+}
+
+.gutenbergLink:hover {
+	color: darkblue;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	transition: 0.3s;
+}
+.searchInProgressMessage {
+	margin-top:20px;
+}
+
+input {
+	margin-left: 0;
+}
+
+.wrapper-search {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 8%;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.bookSearchResults {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 8%;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.booksList {
+	max-width:800px;
+	margin: auto;
+}
+
+.wrapper-results-view {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 8%;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.booksListSelectionButtonDiv {
+	margin:20px;
+}
+
+.resultTextDiv {
+	font-size: 18px;
+	margin: 25px;
+	text-shadow: 1px 1px #d3d3d378;
+}
+
+.booksListSelectionButtonDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-inline: 30%;
+
+}.resultTextButtons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-inline: 30%;
+}
+
+.updateProgressBookSelection {
+	margin: auto;
+}
+
+.wordSearchForm {
+	margin:10px;
+	align ="center";
+	Width="240px";
+}
+
+/*BUTTONS*/
+.aspButton {
+	padding-inline: 10px;
+	padding-block: 2px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: mediumvioletred;
+	color: floralwhite;
+	box-shadow: initial;
+}
+
+.aspButton:hover {
+	transition: linear 0.3s;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* ABOUT WINDOW*/
+.aboutWindow {
+	font-size: 12px;
+	display: none;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.aboutWindow-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60%;
+}
+
+.aboutWindowClose{
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.aboutWindowClose:hover,
+.aboutWindowClose:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+} 
